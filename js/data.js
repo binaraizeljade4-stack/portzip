@@ -25,9 +25,7 @@ const TIMELINE = [
 ];
 /* Level: 0 to 100. Keep only skills you really have. */
 const SKILLS = [
-  { cat: "Programming", n: "Python", l: 50 }, { cat: "Programming", n: "Java", l: 40 },
-  { cat: "Programming", n: "HTML and CSS", l: 60 }, { cat: "Programming", n: "JavaScript", l: 45 },
-  { cat: "Database", n: "MySQL and SQL", l: 55 },
+  { cat: "Database", n: "MySQL and SQL", l: 30 },
   { cat: "Systems", n: "Networking and troubleshooting", l: 55 }, { cat: "Systems", n: "Computer hardware and software", l: 60 },
   { cat: "Security", n: "Cybersecurity fundamentals", l: 40 },
   { cat: "Data", n: "Data analysis in Excel", l: 55 },
@@ -38,8 +36,6 @@ const PROJECTS = [
   { type: "Web", t: "Food Website (Mesa Kitchen)", d: "A simple restaurant website with a filterable menu and a working order tray.", obj: "Let visitors browse a menu by category and build an order with a running total.", tech: ["HTML", "CSS", "JavaScript"], img: "", code: "", demo: "projects/food-website/" },
   { type: "Web", t: "EduPortal: School Information System", d: "A school information system for Datamex College of Saint Adeline with online enrollment, grades, permits and payments.", obj: "Let students, parents and teachers enroll online and track grades, permits and payments in one place.", tech: ["Web application", "Student information system"], img: "", code: "", demo: "https://skyblue-sardine-644746.hostingersite.com/?utm_id=97757_v0_s00_e0_tv0" },
   { type: "Web", t: "Personal Portfolio Website", d: "Sample: this responsive portfolio.", obj: "Present my skills and work in one professional page.", tech: ["HTML", "CSS", "JavaScript"], img: "", code: "", demo: "" },
-  { type: "Data", t: "Database Management System", d: "Sample: a normalized database with queries and reports.", obj: "Design tables, keys and relationships, then query them with SQL.", tech: ["MySQL", "SQL"], img: "", code: "", demo: "" },
-  { type: "Tools", t: "Network Troubleshooting Tool", d: "Sample: a script that runs ping and DNS checks.", obj: "Help find where a connection fails.", tech: ["Python", "ping", "nslookup"], img: "", code: "", demo: "" }
 ];
 const CASES = [
   { t: "No internet connection", p: "A computer cannot reach websites.", c: "Loose cable, disabled adapter, wrong IP settings, DNS failure, router fault.", s: "Check the cable and adapter. Run ipconfig /all. Ping the gateway, then 8.8.8.8, then a website name to find which step fails.", f: "Renew the IP with ipconfig /release and /renew, flush DNS with ipconfig /flushdns, or set a working DNS server.", l: "Test step by step, from the cable to the router to the website, so you find exactly where the connection fails instead of guessing." },
